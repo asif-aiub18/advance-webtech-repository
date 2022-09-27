@@ -12,5 +12,15 @@ class HomeController extends Controller
     public function service(){
         return view ('product.service');
     }
+    public function teams(){
+        return view ('page.index.ourTeams');
+    }
     
+    public function about(){
+        return view ('page.index.about');
+    }
+
+    public function contact(){
+        return view ('page.index.contact');
+    }
 }

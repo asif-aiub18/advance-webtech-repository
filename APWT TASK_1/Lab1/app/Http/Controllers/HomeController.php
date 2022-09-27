@@ -10,9 +10,22 @@ class HomeController extends Controller
         return view ('page.index.landingPage');
     }
     public function service(){
-        return view ('product.service');
+        $data = array(
+
+            
+            "2"=>array(
+                "name"=> "2 Event",
+                "details"=> "This is the 2 event"
+            ),
+            "1"=>array(
+                "name"=> "1 Event",
+                "details"=> "This is the 1 event"
+            ),
+            );
+        return view ('service', ['data' => $data]);
     }
     public function teams(){
+
         return view ('page.index.ourTeams');
     }
     
